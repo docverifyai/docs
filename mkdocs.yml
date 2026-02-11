@@ -55,5 +55,7 @@ markdown_extensions:
   - attr_list
   - tables
 
+copyright: "&copy; 2026 Blackbox Labs SRL (CUI: RO33784095). DocVerify is a product of Blackbox Labs SRL, registered in Romania."
+
 extra_css:
   - assets/stylesheets/extra.css
