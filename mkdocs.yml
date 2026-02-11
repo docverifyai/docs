@@ -1,0 +1,59 @@
+site_name: DocVerify
+site_url: https://docs.docverify.dev
+site_description: Catch AI hallucinations before your customers do
+repo_url: https://github.com/docverifyai/docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - API Reference: api-reference.md
+  - SDKs:
+    - Python: sdks/python.md
+    - JavaScript: sdks/javascript.md
+  - Guides:
+    - File Upload: guides/file-upload.md
+    - Batch & Compare: guides/batch-verify.md
+    - Streaming: guides/streaming.md
+    - Enterprise: guides/enterprise.md
+  - Self-Hosting:
+    - Docker: self-hosting/docker.md
+    - On-Premise: self-hosting/on-premise.md
+    - Operations: self-hosting/operations.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - tables
+
+extra_css:
+  - assets/stylesheets/extra.css
